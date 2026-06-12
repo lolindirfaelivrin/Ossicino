@@ -1,195 +1,203 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Ossicino, un piccolo framework per css">
-	<meta name="generator" content="Gru Gru <3">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="src/ossicino.css">
-	<link rel="icon" type="image/svg+xml" href="asset/svg/ossicino.svg">
-	<title>Ossicino - CSS all'osso </title>
-	<style>.no-js {
-		display: none !important;
-	}</style>
-	<script src="asset/js/grugru.js" defer></script>
-</head>
-<body data-bianco>
-<noscript>Questa pagina necessita il supporto di Javascript. Abilita la funzionalit&agrave; nelle impostazioni del tuo
-	browser.
-</noscript>
-<nav>
-	<ul data-accento="false">
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Ciao</a></li>
-		<li><a href="#">Prova</a></li>
-	</ul>
-	<h2 class="testo-maiuscolo">Ossicino</h2>
-	<ul data-accento="false">
-		<li><a href="#">Documentazione</a></li>
-		<li><a href="#">github</a></li>
-	</ul>
-</nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Ossicino, un piccolo framework per css" />
+    <meta name="generator" content="Gru Gru <3" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/ossicino.css" />
+    <link rel="icon" type="image/svg+xml" href="asset/svg/ossicino.svg" />
+    <title>Ossicino - CSS all'osso</title>
+    <style>
+      .no-js {
+        display: none !important;
+      }
+    </style>
+    <script src="asset/js/grugru.js" defer></script>
+  </head>
+  <body data-bianco>
+    <noscript
+      >Questa pagina necessita il supporto di Javascript. Abilita la
+      funzionalit&agrave; nelle impostazioni del tuo browser.
+    </noscript>
+    <nav>
+      <ul data-accento="false">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Ciao</a></li>
+        <li><a href="#">Prova</a></li>
+      </ul>
+      <h2 class="testo-maiuscolo">Ossicino</h2>
+      <ul data-accento="false">
+        <li><a href="#">Documentazione</a></li>
+        <li><a href="#">github</a></li>
+      </ul>
+    </nav>
 
-<section>
-	<h1>Ossicino</h1>
-	<p>
-		<em>Ossicino</em> &egrave; un livello di bellezza che viene applicato ai tuoi documenti HTML,
-		in modo automati e senza l'utlizzo di classi css.
-	</p>
-	<p>
-		Lo stile di Ossicino &egrave; applicato ai seguienti elementi:
-	</p>
-	<ul>
-		<li>Tabelle</li>
-		<li>Form</li>
-		<li>Dialog</li>
-	</ul>
-</section>
+    <section>
+      <h1>Ossicino</h1>
+      <p>
+        <em>Ossicino</em> &egrave; un livello di bellezza che viene applicato ai
+        tuoi documenti HTML, in modo automati e senza l'utlizzo di classi css.
+      </p>
+      <p>Lo stile di Ossicino &egrave; applicato ai seguienti elementi:</p>
+      <ul>
+        <li>Tabelle</li>
+        <li>Form</li>
+        <li>Dialog</li>
+      </ul>
+    </section>
 
-<section>
-	<h1>Ossicino, pagina di esempio</h1>
-	<h2>Tabella Normale</h2>
-	<table>
-		<thead>
-		<tr>
-			<th>Intestazione 1</th>
-			<th>Intestazione 2</th>
-			<th>Intestazione 3</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td>Voce 1</td>
-			<td>Voce 2</td>
-			<td>Voce 3</td>
-		</tr>
-		<tr>
-			<td>Voce 1</td>
-			<td>Voce 2</td>
-			<td>Voce 3</td>
-		</tr>
-		</tbody>
-	</table>
-</section>
+    <section>
+      <h1>Ossicino, pagina di esempio</h1>
+      <h2>Tabella Normale</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Intestazione 1</th>
+            <th>Intestazione 2</th>
+            <th>Intestazione 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Voce 1</td>
+            <td>Voce 2</td>
+            <td>Voce 3</td>
+          </tr>
+          <tr>
+            <td>Voce 1</td>
+            <td>Voce 2</td>
+            <td>Voce 3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-<section>
-	<h2>Tabella Zebrata</h2>
-	<p>Per utilizzare la tabella di tipo zebra, basta aggiungere l'attributo
-		<mark><i>role="zebra"</i></mark>
-		nella tabella
-	</p>
-	<table role="grid">
-		<caption>Titolo descrittivo della tabella Zebrata</caption>
-		<thead>
-		<tr>
-			<th>Intestazione 1</th>
-			<th>Intestazione 2</th>
-			<th>Intestazione 3</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td>Voce 1</td>
-			<td>Voce 2</td>
-			<td>Voce 3</td>
-		</tr>
-		<tr>
-			<td>Voce 1</td>
-			<td>Voce 2</td>
-			<td>Voce 3</td>
-		</tr>
-		<tr>
-			<td>Voce 1</td>
-			<td>Voce 2</td>
-			<td>Voce 3</td>
-		</tr>
-		</tbody>
-	</table>
-</section>
+    <section>
+      <h2>Tabella Zebrata</h2>
+      <p>
+        Per utilizzare la tabella di tipo zebra, basta aggiungere l'attributo
+        <mark><i>role="zebra"</i></mark>
+        nella tabella
+      </p>
+      <table role="grid">
+        <caption>
+          Titolo descrittivo della tabella Zebrata
+        </caption>
+        <thead>
+          <tr>
+            <th>Intestazione 1</th>
+            <th>Intestazione 2</th>
+            <th>Intestazione 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Voce 1</td>
+            <td>Voce 2</td>
+            <td>Voce 3</td>
+          </tr>
+          <tr>
+            <td>Voce 1</td>
+            <td>Voce 2</td>
+            <td>Voce 3</td>
+          </tr>
+          <tr>
+            <td>Voce 1</td>
+            <td>Voce 2</td>
+            <td>Voce 3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-<section>
-	<form action="">
-		<label for="campo">Label del campo</label>
-		<input type="text" id="campo" placeholder="campo">
-		<label for="campo-due">Label del campo due</label>
-		<input type="text" id="campo-due" placeholder="campo due">
-		<label for="testo">Testo</label>
-		<textarea name="testo" id="testo"></textarea>
-		<label for="scegli">Secli il valore</label>
-		<select name="scegli" id="scegli">
-			<option value="1">primo</option>
-			<option value="2">secondo</option>
-		</select>
-		<input type="submit" name="invia" value="invia">
-	</form>
-</section>
+    <section>
+      <form action="">
+        <label for="campo">Label del campo</label>
+        <input type="text" id="campo" placeholder="campo" />
+        <label for="campo-due">Label del campo due</label>
+        <input type="text" id="campo-due" placeholder="campo due" />
+        <label for="testo">Testo</label>
+        <textarea name="testo" id="testo"></textarea>
+        <label for="scegli">Secli il valore</label>
+        <select name="scegli" id="scegli">
+          <option value="1">primo</option>
+          <option value="2">secondo</option>
+        </select>
+        <input type="submit" name="invia" value="invia" />
+      </form>
+    </section>
 
-<section>
-	<form action="">
-		<fieldset>
-			<legend>Form con legend</legend>
-			<label for="campo-legend">Label del campo</label>
-			<input type="text" id="campo-legend" placeholder="campo">
-		</fieldset>
-	</form>
-</section>
+    <section>
+      <form action="">
+        <fieldset>
+          <legend>Form con legend</legend>
+          <label for="campo-legend">Label del campo</label>
+          <input type="text" id="campo-legend" placeholder="campo" />
+        </fieldset>
+      </form>
+    </section>
 
-<section>
-	<hgroup>
-		<h2>Esempi di tipografia</h2>
-		<p>Nel detaglio come vengono stilizatti gli elementi di tipografia</p>
-	</hgroup>
-	<blockquote>
-		<p>De nihilo nihilum, in nihilum nil posse reverti</p>
-		<cite>- Aulo persio flacco</cite>
-	</blockquote>
-</section>
+    <section>
+      <hgroup>
+        <h2>Esempi di tipografia</h2>
+        <p>Nel detaglio come vengono stilizatti gli elementi di tipografia</p>
+      </hgroup>
+      <blockquote>
+        <p>De nihilo nihilum, in nihilum nil posse reverti</p>
+        <cite>- Aulo persio flacco</cite>
+      </blockquote>
+    </section>
 
-<section>
-	<button>ciao dal bottone</button>
-	<button data-primario>ciao dal bottone primario</button>
-	<button class="icon">
-		immagine
-		<img src="https://icongr.am/feather/file.svg?size=24&amp;color=000000" alt="icon">
-	</button>
-	<button disabled>disabilitato</button>
-</section>
+    <section>
+      <button>ciao dal bottone</button>
+      <button data-primario>ciao dal bottone primario</button>
+      <button class="icon">
+        immagine
+        <img
+          src="https://icongr.am/feather/file.svg?size=24&amp;color=000000"
+          alt="icon"
+        />
+      </button>
+      <button disabled>disabilitato</button>
+    </section>
 
+    <dialog id="modale">
+      <article>
+        <header><a href="#close" aria-label="Close"></a></header>
+        <h1>ciao dal dialog</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere
+          voluptate ea debitis beatae ad corporis soluta rerum repellat, totam
+          sequi, enim ipsa natus velit perferendis quae maiores dolorem culpa.
+        </p>
+        <form>
+          <label for="dialog1">Nome</label>
+          <input type="text" name="" id="dialog1" />
+          <label for="dialog2">Cognome</label>
+          <input type="text" name="" id="dialog2" />
+          <label for="accetta">
+            <input type="checkbox" name="acceta" id="accetta" />
+            Accetta i termini del servizio
+          </label>
+          <input type="submit" value="salva" />
+        </form>
+        <footer>
+          <button data-primario id="modale-btn-chiudi">chiudi</button>
+        </footer>
+      </article>
+    </dialog>
+    <button data-primario id="modale-btn-apri">dialog</button>
 
-<dialog id="modale">
-	<article>
-		<header><a href="#close" aria-label="Close"></a></header>
-		<h3>ciao dal dialog</h3>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere voluptate ea debitis beatae ad corporis
-			soluta
-			rerum repellat, totam sequi, enim ipsa natus velit perferendis quae maiores dolorem culpa.</p>
-		<form>
-			<label for="dialog1">Nome</label>
-			<input type="text" name="" id="dialog1">
-			<label for="dialog2">Cognome</label>
-			<input type="text" name="" id="dialog2">
-			<label for="accetta">
-				<input type="checkbox" name="acceta" id="accetta">
-				Accetta i termini del servizio
-			</label>
-			<input type="submit" value="salva">
-		</form>
-		<footer>
-			<button data-primario id="modale-btn-chiudi">chiudi</button>
-		</footer>
-	</article>
-
-</dialog>
-<button data-primario id="modale-btn-apri">dialog</button>
-
-
-<footer>Ciao io sono il foot, copia <kbd>Ctl+S</kbd></footer>
-<script>document.documentElement.classList.remove('no-js');</script>
-<script>
-	addEventListener('DOMContentLoaded', () => {
-		dialog.avvia('#modale');
-	});
-</script>
-</body>
+    <footer>Ciao io sono il foot, copia <kbd>Ctl+S</kbd></footer>
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
+    <script>
+      addEventListener("DOMContentLoaded", () => {
+        dialog.avvia("#modale");
+      });
+    </script>
+  </body>
 </html>
