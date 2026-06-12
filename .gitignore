@@ -1,0 +1,10 @@
+#Sistema operativo
+.DS_Store
+Thumbs.db
+
+# File PHP di utilità
+*.php
+
+#Markdown di documentazione
+RISORSE.md
+VERSIONE.md
