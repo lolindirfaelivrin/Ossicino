@@ -1,0 +1,20 @@
+/*
+* Componenete Media
+* Creato Mer 02 ago 2023
+* Ultima modifica
+*
+* Gestisce le media query della pagina
+*/
+
+/* Gestisce un contrasto alto */
+@media (prefers-contrast: more) {
+	text-decoration: underline;
+}
+
+/* Gestisce il tema di luminosità */
+@media (prefers-color-scheme: dark) {
+	body {
+		color: var(--colore-bianco);
+		background-color: var(--colore-nero);
+	}
+}

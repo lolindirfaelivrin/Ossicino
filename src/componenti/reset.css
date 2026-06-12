@@ -1,0 +1,75 @@
+/** RESET */
+
+/**
+* 3 - Facilita il cambiamento del box-size in plug-in o componenti
+*/
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+	box-sizing: border-box; /* 3 */
+}
+
+
+*, *::before, *::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	min-width: 0;
+	outline: none;
+	text-rendering: optimizeLegibility;
+}
+
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+input, button, textarea, optgroup, select {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	font-style: italic;
+	background-repeat: no-repeat;
+	background-size: cover;
+	shape-margin: 0.75rem;
+}
+
+/* Verificare questo selettore
+img:broken {
+	filter: grayscale(100%);
+}
+*/
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+	-webkit-appearance: button;
+}
+
+a:is([aria-current], :focus, :hover, :active, .active) {
+	color: #302ecd;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: var(--colore-link-attivo);
+}
+
+video[autoplay]:not([muted]) {
+	display: none;
+}

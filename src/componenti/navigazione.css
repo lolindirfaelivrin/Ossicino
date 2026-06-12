@@ -1,0 +1,40 @@
+/*
+* Componenete Navigazione
+* Creato Gio 27 lug 2023
+* Ultima modifica
+*
+* Gestisce elemento di navigazione dei link
+*/
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1rem;
+	/**box-shadow: var(--ombra);*/
+	/**outline: 3px solid indigo;**/
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-items: flex-end;
+	padding: var(--spazio) 0;
+}
+
+nav a {
+	text-decoration: none;
+	user-select: none;
+}
+
+nav > h2 {
+	color: var(--color-accento);
+}
+
+aside nav {
+	flex-direction: column;
+}
+

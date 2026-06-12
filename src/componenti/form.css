@@ -1,0 +1,75 @@
+/*
+* Componenete Form
+* Creato Gio 27 lug 2023
+* Ultima modifica Mer 02 ago 2023
+*
+* Gestisce elemento del form
+*/
+
+label {
+	display: inline-block;
+	line-height: 2;
+	font-weight: bolder;
+	text-transform: capitalize;
+}
+
+input,
+select,
+textarea {
+	padding: var(--spazio);
+	margin-block: calc(var(--spazio) / 2);
+}
+
+/* input[type="submit"] e nput[type="reset"]  stile comune su button.css */
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+	display: block;
+	font-size: 1rem;
+	width: 100%;
+	border: 1px solid var(--colore-tabella);
+	border-radius: var(--bordo-raggio);
+	color: inherit;
+}
+
+/* Colore del cursone nei campi di testo */
+input,
+textarea {
+	caret-color: var(--color-accento);
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+	border: 1px solid var(--colore-bottone);
+	caret-color: var(--colore-bottone);
+}
+
+textarea {
+	overflow: auto;
+	resize: vertical;
+}
+
+select {
+	appearance: none;
+	background-size: 1ex;
+	background-origin: content-box;
+	background: #f3f3f6 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='40' fill='%23555'><polygon points='0,0 60,0 30,40'/></svg>") no-repeat 100% 100%;
+}
+
+fieldset legend {
+	float: left;
+	background-color: var(--colore-bianco-scuro);
+}
+
+/* Accent */
+progress,
+[type=checkbox],
+[type=radio],
+[type=range] {
+	accent-color: var(--colore-bottone);
+	cursor: pointer;
+}

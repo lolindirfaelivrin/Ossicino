@@ -1,0 +1,29 @@
+/*
+* Componenete Dialog
+* Creato Mer 02 ago 2023
+* Ultima modifica
+*
+* Gestisce elemento dialog
+*/
+
+dialog {
+	min-width: 60rem;
+	border: none;
+	padding: 2rem;
+	z-index: 999;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	backdrop-filter: var(--modal-backdrop);
+	box-shadow: var(--ombra);
+}
+
+dialog article > header a {
+	background-image: var(--icon-close);
+	float: right;
+}
+
+dialog article > footer {
+	text-align: right;
+}

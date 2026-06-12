@@ -1,0 +1,24 @@
+/*
+* Componenete UTILITÀ
+* Creato Gio 27 lug 2023
+* Ultima modifica Lun 30 giu 2023
+*
+* Elementi CSS di utilità
+*/
+
+.testo-maiuscoletto{
+	text-transform: uppercase;
+}
+.testo-minuscolo {
+	text-transform: lowercase;
+}
+.testo-maiuscolo {
+	text-transform: capitalize;
+}
+.testo-corsivo {
+	text-transform: italic;
+}
+.testo-grassetto {
+	font-weight: bold;
+}
+

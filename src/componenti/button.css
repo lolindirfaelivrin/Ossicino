@@ -1,0 +1,46 @@
+/*
+* Componenete Button
+* Creato Mer 02 ago 2023
+* Ultima modifica
+*
+* Gestisce elemento button e .button
+*/
+
+button, .button, input[type="button"], [role="button"], input[type="submit"], input[type="reset"] {
+	display: inline-block;
+	padding: 1rem 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: opacity 0.2s ease;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+button:is(:disabled:hover, :disabled) {
+	opacity: 0.6;
+	cursor: not-allowed;
+	border: 1px solid var(--colore-nero);
+}
+
+button[data-primario], input[type="button"] {
+	background-color: var(--colore-primario);
+	color: var(--colore-bianco);
+}
+
+button.icon {
+	display: inline-flex;
+	align-items: center;
+	gap: 2px;
+}
+
+
+button.icon > img {
+	margin-left: 2px;
+} 

@@ -1,0 +1,44 @@
+/*
+* Componenete Layout
+* Creato Gio 27 lug 2023
+* Ultima modifica
+*
+* Gestisce gli spazi e la disposione degli elementi del documento nello spazio
+*/
+
+body {
+	margin-inline: var(--spazio-orizzontale);
+	margin-block: var(--spazio-verticale);
+	height: 100dvh;
+}
+
+body:has(aside, main) {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: calc(var(--spazio) * 1.5);
+}
+
+section {
+	margin: calc(var(--spazio) * 1.5) 0;
+	padding-block: var(--spazio-verticale);
+}
+
+section:empty {
+	display: none;
+}
+
+body, nav, section, footer {
+	padding-inline: var(--spazio);
+}
+
+footer {
+	padding-block: var(--spazio-verticale);
+}
+
+p, table {
+	margin-block: calc(var(--spazio) / 2);
+}
+
+:where(table,pre) {
+	margin-top: var(--spazio);
+}
