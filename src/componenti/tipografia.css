@@ -1,74 +1,84 @@
 /*
 * Componenete Tipografia
 * Creato Gio 27 lug 2023
-* Ultima modifica
+* Ultima modifica Sab 13 Giugno 2026
 *
 * Gestisce gli aspetti grafici degli elementi del documento
 */
 
 ::selection {
-	color: var(--colore-bianco);
-	background-color: var(--colore-nero);
+  color: var(--colore-bianco);
+  background-color: var(--colore-nero);
 }
 
 body {
-	font-family: var(--font);
-	color: var(--font-colore);
-	background-color: var(--colore-sfondo);
+  font-family: var(--font);
+  color: var(--font-colore);
+  background-color: var(--colore-sfondo);
 }
 
 body[data-bianco] {
-	background-color: var(--colore-bianco);
+  background-color: var(--colore-bianco);
 }
 
-nav, section, footer {
-	background-color: var(--colore-bianco);
+nav,
+section,
+footer {
+  background-color: var(--colore-bianco);
 }
 
-mark, kbd {
-	color: var(--colore-bianco);
-	background-color: var(--colore-nero);
-	font-family: var(--font-monospazio);
+mark,
+kbd {
+  color: var(--colore-bianco);
+  background-color: var(--colore-nero);
+  font-family: var(--font-monospazio);
 }
 
 hgroup {
-	padding-left: 16px;
-	border-left: 10px solid var(--colore-bottone);
+  padding-left: 16px;
+  border-left: 10px solid var(--colore-bottone);
 }
 
-hgroup h1, hgroup h2 {
-	margin-bottom: 0;
+hgroup h1,
+hgroup h2 {
+  margin-bottom: 0;
 }
 
 hgroup p {
-	margin: 0;
-	font-weight: bold;
+  margin: 0;
+  font-weight: bold;
 }
 
 :is(ol, ul):not([data-accento="false"]) {
-	list-style: none;
+  list-style: none;
 }
 
 :is(ol, ul):not([data-accento="false"]) li::before {
-	content: "\2022";
-	color: var(--color-accento);
-	font-weight: bold;
-	display: inline-block;
-	width: 1em;
-	margin-left: -1em;
+  content: "\2022";
+  color: var(--color-accento);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 code {
-	font-family: var(--font-monospazio);
+  font-family: var(--font-monospazio);
 }
 
 pre code {
-	display: block;
-	background: none;
-	white-space: pre;
-	-webkit-overflow-scrolling: touch;
-	overflow-x: scroll;
-	max-width: 100%;
-	min-width: 100px;
-	padding: 0;
+  display: block;
+  background: none;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  max-width: 100%;
+  min-width: 100px;
+  padding: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--colore-bordo);
+  margin: 2rem 0;
 }
