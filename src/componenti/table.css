@@ -1,37 +1,47 @@
+/*
+* Componenete TABELLA
+* Creato Gio 27 lug 2023
+* Ultima modifica Sabato 13 giu 2026
+*
+* Elementi CSS di utilità
+*/
 
-table {
-	width: 100%;
-	border-collapse: collapse;
-	border-spacing: 0;
-	text-indent: 0;
-	margin: calc(var(--spazio) * 0.5) auto;
+@layer tabella {
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		border-spacing: 0;
+		text-indent: 0;
+		margin: calc(var(--spazio) * 0.5) auto;
+	}
+
+	table caption {
+		padding: var(--spazio);
+		color: var(--colore-nero);
+		border-top: calc(var(--bordo-spessore) * 3) solid var(--colore-nero);
+		font-family: var(--font-monospazio), sans-serif;
+	}
+
+	thead th {
+		border-bottom: var(--bordo-spessore) solid var(--colore-tabella);
+		border-top: var(--bordo-spessore) solid var(--colore-tabella);
+		text-align: left;
+	}
+
+	tbody tr:last-child {
+		border-bottom: var(--bordo-spessore) solid var(--colore-tabella);
+	}
+
+	th,
+	td {
+		padding: var(--spazio-tabella);
+		/* 1rem in origine */
+		border-bottom: 1px solid var(--colore-tabella-chiaro);
+	}
+
+	/** Tabella zebrata */
+	table[role=grid] tbody tr:nth-child(odd) {
+		background-color: var(--colore-sfondo);
+	}
 }
-
-table caption {
-	padding: var(--spazio);
-	color: var(--colore-nero);
-	border-top: calc(var(--bordo-spessore) * 3) solid var(--colore-nero);
-	font-family: var(--font-monospazio), sans-serif;
-}
-
-thead th {
-	border-bottom: 2px solid var(--colore-tabella);
-	border-top: 2px solid var(--colore-tabella);
-	text-align: left;
-}
-
-tbody tr:last-child {
-	border-bottom: 1px solid var(--colore-tabella);
-}
-
-th,
-td {
-	padding: var(--spazio-tabella); /* 1rem in origine */
-	border-bottom: 1px solid var(--colore-tabella-chiaro);
-}
-
-/** Tabella zebrata */
-table[role=grid] tbody tr:nth-child(odd) {
-	background-color: var(--colore-sfondo);
-}
-
