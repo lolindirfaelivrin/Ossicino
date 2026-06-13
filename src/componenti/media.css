@@ -1,22 +1,43 @@
 /*
-* Componenete Media
-* Creato Mer 02 ago 2023
-* Ultima modifica
+* Componenete Media Query
+* Creato Sab 13 Giugno 2026
+* Ultima modifica Sab 13 Giugno 2026
 *
 * Gestisce le media query della pagina
 */
 
-/* Gestisce un contrasto alto */
-@media (prefers-contrast: more) {
-  a {
-    text-decoration: underline;
+@layer media {
+  /* Gestisce un contrasto alto */
+  @media (prefers-contrast: more) {
+    a {
+      text-decoration: underline;
+    }
   }
-}
 
-/* Gestisce il tema di luminosità */
-@media (prefers-color-scheme: dark) {
-  body {
-    color: var(--colore-bianco);
-    background-color: var(--colore-nero);
+  /* Gestisce il tema di luminosità */
+  @media (prefers-color-scheme: dark) {
+    body {
+      color: var(--colore-bianco);
+      background-color: var(--colore-nero);
+    }
+  }
+
+  /* Gestione immagini con schema colori scuro */
+  @media (prefers-color-scheme: dark) {
+    img {
+      opacity: 0.85;
+      transition: opacity 0.2s ease-in-out;
+    }
+    img:hover {
+      opacity: 1;
+    }
+  }
+
+  /* Gestione collegamenti su stampa */
+  @media print {
+    a[href^="http"]::after {
+      content: " (" attr(href) ")";
+      font-size: 0.9em;
+    }
   }
 }
